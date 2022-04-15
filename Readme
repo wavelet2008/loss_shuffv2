@@ -23,6 +23,9 @@ data/opt/external/rknn-toolkit-v1.7.1/examples/onnx/resnet50v2
  rknn.config(batch_size=1, mean_values=[[123.67, 116.28, 103.53]], std_values=[[58.4, 57.12, 57.37]], reorder_channel='0 1 2', target_platform=[platform],
                 force_builtin_perm=add_perm,quantized_dtype='asymmetric_affine-u8', optimization_level=3, output_optimize=1)
 
+4
+8.108
+C:\Users\ffipc\AppData\Local\Programs\Python\Python3 ecompile_model.py  yolovopt.rknn  syolovopt.rknn
 
 Shufflenet-v2-Pytorch 
 Introduction
