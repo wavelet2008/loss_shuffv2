@@ -1,3 +1,29 @@
+Python3.8  修改空格对齐问题
+
+
+8.31： fc/Shufflenet-v2-Pytorch
+
+1. model.load_state_dict(torch.load(args.evaluate))
+    input = torch.randn((1,3,  224,224))
+
+    torch.onnx.export(model,input,"loss.onnx",opset_version=10)    // 版本修改
+
+2. remonnx.py 
+ 导出模型 onnx.utils.extract_model
+
+
+
+3.rk 转码
+8.180
+  
+data/opt/external/rknn-toolkit-v1.7.1/examples/onnx/resnet50v2
+
+4onnx2rknn.py
+
+ rknn.config(batch_size=1, mean_values=[[123.67, 116.28, 103.53]], std_values=[[58.4, 57.12, 57.37]], reorder_channel='0 1 2', target_platform=[platform],
+                force_builtin_perm=add_perm,quantized_dtype='asymmetric_affine-u8', optimization_level=3, output_optimize=1)
+
+
 Shufflenet-v2-Pytorch 
 Introduction
 
